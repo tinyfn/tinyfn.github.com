@@ -50,9 +50,9 @@
   <nav class="site-navigation">
     <ul>
       
-        <li><a href="/">主页</a></li>
+        <li><a href="/">Home</a></li>
       
-        <li><a href="/archives">归档</a></li>
+        <li><a href="/archives">Archives</a></li>
       
     </ul>
   </nav>
@@ -112,7 +112,22 @@
 </article>
 
 
-<h1>pages</h1>
+
+<div id="container"></div>
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+ var gitment = new Gitment({
+     id: '页面 ID', // 可选。默认为 location.href
+     owner: 'tinyfn',
+     repo: 'tinyfn.github.com',
+     oauth: {
+         client_id: 'a2bf81f03aa37cd8bab0',
+         client_secret: 'b54e99f29da4f19eadd1150a383bb40ca8048a89',
+     },
+ })
+ gitment.render('container')
+</script>
 
     </main>
 
